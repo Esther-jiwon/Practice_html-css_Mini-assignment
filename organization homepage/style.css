@@ -97,6 +97,14 @@ footer {
   font-size: 13px;
 }
 
+.weather__text2 span:first-child span {
+  color: #0963bd;
+}
+
+.weather__text2 span:last-child span {
+  color: #13cc47;
+}
+
 .weather img {
   width: 45px;
   height: 45px;
@@ -252,16 +260,15 @@ footer {
   height: 100%;
 }
 
-.search__box input:focus {
-  border: none;
-}
-
 .search__box > button {
   background-color: #3a71ba;
   color: white;
-  border: none;
   width: 85px;
   height: 100%;
+  border: 2px solid #3a71ba;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 0;
 }
 
 .search__keyword {
@@ -271,6 +278,11 @@ footer {
 .search__keyword * {
   font-size: 15px;
   margin-right: 24px;
+}
+
+.search__keyword span {
+  color: #3a71ba;
+  font-weight: bold;
 }
 
 .pref-btn {
@@ -464,6 +476,7 @@ footer {
 .section-2__events img {
   width: 100%;
   height: 321px;
+  object-fit: cover;
 }
 
 .title {
@@ -516,17 +529,16 @@ footer {
 }
 
 .section-3__chief {
+  position: relative;
   width: 55%;
   height: 100%;
+  overflow: hidden;
 }
 
 .section-3__chief img {
   width: 100%;
   height: 280px;
-}
-
-.chief__image {
-  position: relative;
+  object-fit: cover;
 }
 
 .chief__image ul {
@@ -635,7 +647,7 @@ footer {
   width: 33%;
   height: 345px;
   background-color: #1350a0;
-  margin-right: 30px;
+  margin-right: 33px;
 }
 
 .section-4__sns span {
@@ -704,7 +716,10 @@ footer {
   width: 30%;
   height: 345px;
   border: 1px solid rgba(0, 0, 0, 0.3);
-  margin-right: 30px;
+}
+
+.section-4__post1 {
+  margin-right: 33px;
 }
 
 .post__icon {
@@ -772,7 +787,7 @@ footer {
   display: flex;
 }
 
-.footer-1 li {
+.footer-1__sub-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -780,14 +795,59 @@ footer {
   height: 45px;
   border: 1px solid white;
   padding: 5px 10px;
-  margin-right: 25px;
+  margin: 10px 25px 0px 0px;
   position: relative;
+}
+
+.footer-1__sub-title span {
+  color: white;
+  font-size: 15px;
+}
+
+.footer-1__sub-title:hover .footer-1__sub {
+  display: block;
 }
 
 .footer-1 i {
   position: absolute;
   top: 15px;
   right: 20px;
+}
+
+.footer-1__sub {
+  position: absolute;
+  width: 251px;
+  left: -2px;
+  bottom: 45px;
+  background-color: #34495e;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  display: none;
+}
+
+.footer-1__sub ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-1__sub li {
+  line-height: 40px;
+  padding-left: 10px;
+}
+
+.footer-1__sub li:hover {
+  background-color: white;
+  transition: 0.1s ease-in-out;
+}
+
+.footer-1__sub li:hover a {
+  color: black;
+  font-weight: bold;
+  transition: 0.1s ease-in-out;
+}
+
+.footer-1,
+.footer-2 {
+  padding-left: 30px;
 }
 
 .footer-1 a,

@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <div class="header-1">
+        <div id="top" class="header-1">
             <div class="weather">
                 <img src="https://media.istockphoto.com/vectors/sun-icon-vector-id992923718?k=6&m=992923718&s=612x612&w=0&h=6Evagyye8BpY75ekFj52BPPeC_e58qFlUA9q58lhUOw=">
                 <div class="weather__text1">
@@ -19,8 +19,8 @@
                     <span>15.0&#8451;</span>
                 </div>
                 <div class="weather__text2">
-                    <span>미세먼지 좋음</span>
-                    <span>초미세먼지 보통</span>
+                    <span>미세먼지 <span>좋음</span></span>
+                    <span>초미세먼지 <span>보통</span></span>
                 </div>
             </div>
             <div class="header-1__nav">
@@ -148,6 +148,7 @@
                       <a href="#">#폐기물</a>
                       <a href="#">#보건증</a>
                       <a href="#">#자동차관리과</a>
+                      <a href="#">#지역주택조합</a>
                   </div>
             </div>
             <div class="pref-btn">
@@ -211,19 +212,19 @@
                             </li>
                             <li>
                                 <a href="#">2021 중소기업 어린이집 안내</a>
-                                <span>2021.05.20</span>
+                                <span>2021.05.19</span>
                             </li>
                             <li>
                                 <a href="#">지방세 고지서 스마트폰으로 받으세요!</a>
-                                <span>2021.05.20</span>
+                                <span>2021.05.18</span>
                             </li>
                             <li>
                                 <a href="#">부적합 수입식품 긴급회수 알림 4차 기간변경 알림</a>
-                                <span>2021.05.20</span>
+                                <span>2021.05.17</span>
                             </li>
                             <li>
                                 <a href="#">위생 점검의 달 안내</a>
-                                <span>2021.05.20</span>
+                                <span>2021.05.16</span>
                             </li>
                         </ul>
                     </div>
@@ -323,8 +324,6 @@
                             <li>
                                 <a href="">여러분과의 약속을 반드시 지키겠습니다.</a>
                             </li>
-                            
-                            
                         </ul>
                     </div>
                 </div>
@@ -505,7 +504,7 @@
                 </ul>
             </div>
             <div id="go__top">
-                <a href="#">
+                <a href="#top">
                     <i class="far fa-arrow-alt-circle-up fa-2x"></i>
                     <span>위로</span>
                 </a>
@@ -515,20 +514,110 @@
     <footer>
          <div class="footer-1">
              <ul>
-                 <li>
-                     <a href="#">부서홈페이지
-                        <i class="fas fa-chevron-up"></i>
-                     </a>
+                 <li class="footer-1__sub-title">
+                    <span>부서홈페이지</span>
+                    <i class="fas fa-chevron-up"></i>
+                     <div class="footer-1__sub">
+                         <ul>
+                            <li>
+                                 <a href="#">가로환경과</a>
+                            </li>
+                            <li>
+                                <a href="#">공원녹지과</a>
+                            </li>
+                            <li>
+                                <a href="#">도로시설과</a>
+                            </li>
+                            <li>
+                                <a href="#">문화관광과</a>
+                            </li>
+                            <li>
+                                <a href="#">세무과</a>
+                            </li>
+                            <li>
+                                <a href="#">주차관리과</a>
+                            </li>
+                            <li>
+                                <a href="#">행정지원과</a>
+                            </li>
+                            <li>
+                                <a href="#">토지관리과</a>
+                            </li>
+                            <li>
+                                <a href="#">홍보전산과</a>
+                            </li>
+                         </ul>
+                     </div>
                  </li>
-                 <li>
-                     <a href="#">패밀리/관련사이트
-                        <i class="fas fa-chevron-up"></i>
-                     </a>
+                 <li class="footer-1__sub-title">
+                    <span>패밀리/관련사이트</span>
+                    <i class="fas fa-chevron-up"></i>
+                    <div class="footer-1__sub">
+                        <ul>
+                           <li>
+                                <a href="#">서울시 대기환경정보</a>
+                           </li>
+                           <li>
+                               <a href="#">에어코리아</a>
+                           </li>
+                           <li>
+                               <a href="#">한국국토정보공사</a>
+                           </li>
+                           <li>
+                               <a href="#">녹색건축포털</a>
+                           </li>
+                           <li>
+                               <a href="#">중구청소년센터</a>
+                           </li>
+                           <li>
+                               <a href="#">중구건강가정지원센터</a>
+                           </li>
+                           <li>
+                               <a href="#">국민재난안전포털</a>
+                           </li>
+                           <li>
+                               <a href="#">온라인 행정심판</a>
+                           </li>
+                           <li>
+                               <a href="#">대한법률구조공단</a>
+                           </li>
+                        </ul>
+                    </div>
                  </li>
-                 <li>
-                     <a href="#">서울시 자치구
-                        <i class="fas fa-chevron-up"></i>
-                     </a>
+                 <li class="footer-1__sub-title">
+                     <span>서울시 자치구</span>
+                    <i class="fas fa-chevron-up"></i>
+                    <div class="footer-1__sub">
+                        <ul>
+                           <li>
+                                <a href="#">서울시청</a>
+                           </li>
+                           <li>
+                               <a href="#">강남구청</a>
+                           </li>
+                           <li>
+                               <a href="#">강동구청</a>
+                           </li>
+                           <li>
+                               <a href="#">노원구청</a>
+                           </li>
+                           <li>
+                               <a href="#">동대문구청</a>
+                           </li>
+                           <li>
+                               <a href="#">서초구청</a>
+                           </li>
+                           <li>
+                               <a href="#">송파구청</a>
+                           </li>
+                           <li>
+                               <a href="#">용산구청</a>
+                           </li>
+                           <li>
+                               <a href="#">종로구청</a>
+                           </li>
+                        </ul>
+                    </div>
                  </li>
              </ul>
          </div>
