@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- Bootstrap core JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    
+    
+    <!-- sweetalert API 추가 -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>아이디 찾기</title>
+    <style>
+        .searchId-body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .searchId-main {
+            width: 50%;
+        }
+        .searchId-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .searchId-title {
+            margin-bottom: 20px;
+        }
+
+        .searchId-pageArea {
+            margin-bottom: 20px;
+        }
+        .searchId-form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 60%;
+        }
+        .searchId-input {
+            display: flex;
+            width: 100%;
+        }
+
+        .searchId-input label {
+            width: 100px;
+        }
+        .searchId-btnArea {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+
+        .searchId-btnArea {
+            width: 60%;
+        }
+
+        .searchId-btnArea button:first-child {
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body class="searchId-body">
+
+    <main class="searchId-main">
+
+        <div class="searchId-container">
+
+            <div class="searchId-title">
+                <h2>아이디 찾기</h2>
+            </div>
+
+            <div class="searchId-pageArea">
+                <button class="btn btn-secondary">아이디 찾기</button>
+                <button class="btn btn-secondary">비밀번호 찾기</button>
+            </div>
+
+            <form action="#" class="searchId-form">
+                <div class="searchId-input form-group">
+                    <label for="exampleInputEmail1">이름</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                  <div class="searchId-input form-group">
+                    <label for="exampleInputPassword1">이메일</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <div class="searchId-btnArea">
+                      <button type="submit" class="btn btn-primary">아이디 찾기</button>
+                      <button type="submit" class="btn btn-primary">취소</button>
+                  </div>
+            </form>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
