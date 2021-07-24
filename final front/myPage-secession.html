@@ -83,9 +83,31 @@
                 </div>
             </div>
             <div class="secession-btnArea">
-                <button class="btn btn-primary btn-md " type="submit">회원탈퇴 진행</button>
+                <button class="btn btn-primary btn-md " type="submit" onclick="deleteRequest();">회원탈퇴 진행</button>
             </div>
         </form>
     </main>
+
+    <script>
+        // 탈퇴여부 확인 swal창
+        function deleteRequest(){
+			
+			swal({
+				  title: "정말 탈퇴하시겠습니까?",
+                  text: "회원 복구는 대표전화 문의를 통해 가능합니다",
+				  icon: "warning",
+				  buttons: true,
+				  dangerMode: true,
+				})
+				.then(function(willDelete) { // <=== Only change is here
+					if (willDelete) {
+						  
+					 
+					  }
+				});
+			
+
+		}
+    </script>
 </body>
 </html>
